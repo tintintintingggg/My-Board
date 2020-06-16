@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    width: 80%;
+}
+.registration {
+    margin: 0 auto;
+    text-align: center;
+    border-right: 1.5px solid #CCD1D1 ;
+    border-left: 1.5px solid #CCD1D1 ;
+    width: 500px;
+    padding: 0;
+}
+
+.member-button {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+#sign-up,
+#log-in {
+    flex: 1;
+    width: 300px;
+    padding: 20px;
+    background-color: cadetblue;
+    color: #f5f5f5f5;
+}
+
+#sign-up:hover,
+#log-in:hover {
+    background-color: #EB984E;
+}
+#sign-up-block,
+#log-in-block {
+    display: none;
+}
+
+#sign-up-block div,
+#sign-up-block input,
+#sign-up-block button,
+#log-in-block div,
+#log-in-block input,
+#log-in-block button {
+    margin: 5px;
+}
+
+#hello-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#log-out {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    font-size: 14px;
+}
+
+/* 留言板 */
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+.comment {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #CCD1D1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: ease-in;
+    position: relative;
+}
+
+.container .comment .profile {
+    width: 10%;
+    
+}
+.container .comment .profile img {
+    width: 100%;
+}
+
+.container .comment .name {
+    color: rgba(75, 18, 18, 1);
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    padding: 0 25px;
+}
+.container .comment .title {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+}
+.container .comment .text {
+    display: block;
+    width: 100%;
+    background-color: #E5E8E8;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px 10px;
+}
+.container .comment .time {
+    color: #424949 ;
+    opacity: .8;
+    padding-left: 350px;
+}
+
+#personal {
+    display: none;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #CCD1D1;
+    margin-bottom: 200px;
+}
+
+#my-title {
+    width: 90%;
+    margin-left: 10px;
+    border: none;
+    text-align: center;
+
+}
+#personal-title {
+    width: 100%;
+    border: 1px solid #CCD1D1;
+    border-radius: 15px;
+    line-height: 2;
+    margin: 10px 0;
+}
+
+#my-text {
+    width: 90%;
+    margin-left: 10px;
+    border: none;
+    text-align: center;
+    height: 100px;
+
+}
+#personal-text {
+    width: 100%;
+    border: 1px solid #CCD1D1;
+    border-radius: 15px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.button-div {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-friend-block {
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(75, 18, 18, 0.6);
+    color: #f5f5f5f5;
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    display: none;
+    transition-delay: 2s;
+}
+/* bar */
+
+.right-bar {
+    width: 300px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #CCD1D1;
+    height: 200px;
+    display: none;
+}

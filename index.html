@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Board</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+    <div class="registration">
+        <div class="member-button">
+            <div><span id="sign-up">Sign Up</span></div>
+            <div><a id="log-in" href="#">Log In</a></div>
+        </div>
+        <div id="sign-up-block">
+            <div for="username">使用者名稱 : </div>
+            <input id="signup-username" type="text" name="username" placeholder="請填入使用者名稱">
+            <div for="email">E-Mail : </div>
+            <input id="signup-email" type="text" name="email" placeholder="請填入 E-Mail">
+            <div for="passwords">密碼 : </div>
+            <input id="signup-passwords" type="text" name="passwords" placeholder="請填入密碼"></br>
+            <button id="sign-up-submit-button">註冊送出</button>
+        </div>
+        <div id="log-in-block">
+            <div for="email">E-Mail : </div>
+            <input id="login-email" type="text" name="email" placeholder="請填入 E-Mail">
+            <div for="passwords">密碼 : </div>
+            <input id="login-passwords" type="text" name="passwords" placeholder="請填入密碼"></br>
+            <button id="log-in-submit-button">登入送出</button>
+        </div>
+    </div>
+    
+    <div class="board">
+        <div class="container" id="container"></div>
+        <div id="personal">
+            <div id="personal-title">
+                <!-- <label for="title">Title : </label> -->
+                <input id="my-title" type="text" name="title" placeholder="Type your title here.">
+            </div>
+            <div id="personal-text">
+                <!-- <label for="title">Comment : </label> -->
+                <input id="my-text" type="text" name="comment" placeholder="Type your comment here.">
+            </div>
+            <div class="button-div">
+                <button id="comment-submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="hello-message"></div>
+    <button id="log-out">Log Out</button>
+    <div class="right-bar">
+    </div>
+    <div class="friends">
+
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
